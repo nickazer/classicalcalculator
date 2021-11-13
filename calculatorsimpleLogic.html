@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div><h1>CLASSIC CALCULATOR</h1></div><br>
+    <!--  Not a modern design also not a modern way of coding using tables and rows :D  -->
+    <div>
+        <table>
+            <tr>
+                <td style=" font-family: 'Brush Script MT', cursive" colspan="4">Cashew <p id="cal_display" ></p></td>
+            </tr>
+            <tr>
+                <td colspan="4"><p id="main_display" ></p></td>
+            </tr>
+            <tr>
+                <td><button class="blue" onclick="onButtonclick('%')">%</button></td>
+                <td><button class="red" onclick="onButtonclick('CE')">CE</button></td>
+                <td><button class="red" onclick="onButtonclick('C')">AC</button></td>
+                <td><button class="red" onclick="onButtonclick('Del')">Del</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="onButtonclick(7)">7</button></td>
+                <td><button onclick="onButtonclick(8)">8</button></td>
+                <td><button onclick="onButtonclick(9)">9</button></td>
+                <td><button class="blue" onclick="onButtonclick('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="onButtonclick(4)">4</button></td>
+                <td><button onclick="onButtonclick(5)">5</button></td>
+                <td><button onclick="onButtonclick(6)">6</button></td>
+                <td><button class="blue" onclick="onButtonclick('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="onButtonclick(1)">1</button></td>
+                <td><button onclick="onButtonclick(2)">2</button></td>
+                <td><button onclick="onButtonclick(3)">3</button></td>
+                <td><button class="blue" onclick="onButtonclick('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="onButtonclick(0)">0</button></td>
+                <td><button  onclick="onButtonclick('.')">.</button></td>
+                <td colspan="2"><button class="blue" onclick="onButtonclick('=')" style="width: 105px;">=</button></td>
+            </tr>
+          
+          
+        </table>
+    <div></div>
+    <script rel="text/Javascript" src="calculator.js">  </script>
+</body>
+</html>
